@@ -5,12 +5,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/app.js",
-    "build":"npm install && npm install --prefix frontend && npm run build --prefix frontend",
-     "start": "nodemon src/app.js",
-     "prod": "pm2 src/app.js"
+    "dev": "nodemon src/index.js",
+    "start": "nodemon src/index.js",
+    "build":"npm install && npm run build"
   },
-  "author": "apnacollege",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
@@ -27,3 +26,4 @@
     "npm":"8.x"
   }
 }
+
