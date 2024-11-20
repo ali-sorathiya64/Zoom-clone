@@ -14,7 +14,7 @@ const server = createServer(app);
 const io = connectToSocket(server);
 const Connction_string ='mongodb://127.0.0.1:27017/ali-bhai'
 
-
+console.log("process.stdin:",process.stdin);
 app.set( process.env.PORT || 5000)
 app.use(cors());
 app.use(express.json({ limit: "40kb" }));
