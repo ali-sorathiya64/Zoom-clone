@@ -5,8 +5,8 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/app.js",
-    "start": "nodemon src/app.js",
+    "dev": "nodemon app.js",
+    "start": "nodemon app.js",
     "build": "npm install && npm run build"
   },
   "author": "",
