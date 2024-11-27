@@ -12,7 +12,7 @@ import userRoutes from "./src/routes/users.routes.js";
 const app = express();
 const server = createServer(app);
 const io = connectToSocket(server);
-const Connction_string ='mongodb://127.0.0.1:27017/ali-bhai'
+const Connction_string ='mongodb+srv://aasorathiya:nhuDIF2YtIjDTJIQ@cluster0.obszg.mongodb.net/conference-App'
 if ( process.env.NODE_ENV === 'production' && ! process.stdin){process.stdin ={ on :()=> {}, resume:() => {} };
 }
    
@@ -26,7 +26,7 @@ app.use("/api/v1/users", userRoutes);
 
 const start = async () => {
     app.set("mongo_user")
-    const connectionDb = await mongoose.connect(Connction_string)
+    const connectionDb = await mongoose.connect(process.env.MONGO_URL||Connction_string)
 
     console.log(`MONGO Connected DB HOst: ${connectionDb.connection.host}`)
     server.listen(app.get("port"), () => {

@@ -29,6 +29,7 @@
     "define-data-property": "^1.1.4",
     "depd": "^2.0.0",
     "destroy": "^1.2.0",
+    "dotenv": "^16.4.5",
     "ee-first": "^1.1.1",
     "encodeurl": "^2.0.0",
     "engine.io": "^6.6.2",
@@ -123,9 +124,9 @@
     "ws": "^8.17.1"
   },
   "scripts": {
-    "start":"node app.js",
-    "app":"nodemon app.js",
-    "build":"npm install & npm run build"
+    "start": "node app.js",
+    "app": "nodemon app.js",
+    "build": "npm install & npm run build"
   },
   "keywords": [],
   "author": "",
