@@ -1,8 +1,8 @@
 let IS_PROD = true;
-const server = IS_PROD ?  "http://localhost:5000":
+const server = IS_PROD ?  "https://zoom-clone-backend-fjt0.onrender.com":
     
 
-    "http://localhost:5000"
+    "https://zoom-clone-backend-fjt0.onrender.com"
 
 
 export default server;
